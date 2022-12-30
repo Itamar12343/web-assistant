@@ -1,0 +1,40 @@
+.btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    font-size: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(184, 221, 254);
+    cursor: pointer;
+    transition: 0.4s;
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+@keyframes scale {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.display-image {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(250, 231, 169);
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+}
